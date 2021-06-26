@@ -9,17 +9,3 @@ edition = "2018"
 identity = { git = "https://github.com/iotaledger/identity.rs", branch = "main"}
 pretty_env_logger = { version = "0.4" }
 tokio = { version = "1.5", features = ["full"] }
-
-[workspace]
-members = [
-  "identity",
-  "identity-comm",
-  "identity-account",
-  "identity-core",
-  "identity-credential",
-  "identity-did",
-  "identity-diff",
-  "identity-iota",
-
-  "examples",
-]
