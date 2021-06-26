@@ -1,0 +1,12 @@
+prefix=/Users/julia/ruhackathon/target/debug/build/libsodium-sys-799eaec6f50f255e/out/installed
+exec_prefix=${prefix}
+libdir=/Users/julia/ruhackathon/target/debug/build/libsodium-sys-799eaec6f50f255e/out/installed/lib
+includedir=${prefix}/include
+
+Name: libsodium
+Version: 1.0.18
+Description: A modern and easy-to-use crypto library
+
+Libs: -L${libdir} -lsodium
+Libs.private:  -pthread 
+Cflags: -I${includedir}

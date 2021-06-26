@@ -1,2 +1,2 @@
-cargo:rustc-env=TYPENUM_BUILD_CONSTS=/Users/daddy/Code/Hackathon App/ruhackathon/target/debug/build/typenum-dedd167775007539/out/consts.rs
-cargo:rustc-env=TYPENUM_BUILD_OP=/Users/daddy/Code/Hackathon App/ruhackathon/target/debug/build/typenum-dedd167775007539/out/op.rs
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=/Users/julia/ruhackathon/target/debug/build/typenum-dedd167775007539/out/consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=/Users/julia/ruhackathon/target/debug/build/typenum-dedd167775007539/out/op.rs
