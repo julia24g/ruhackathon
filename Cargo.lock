@@ -2151,6 +2151,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "ruhackathon"
+version = "1.0.0"
+dependencies = [
+ "identity",
+ "pretty_env_logger",
+ "tokio",
+]
+
+[[package]]
 name = "rustls"
 version = "0.19.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2660,15 +2669,6 @@ checksum = "bc5cf98d8186244414c848017f0e2676b3fcb46807f6668a97dfe67359a3c4b7"
 dependencies = [
  "getrandom 0.2.3",
  "serde",
-]
-
-[[package]]
-name = "vaccineApp"
-version = "0.1.0"
-dependencies = [
- "identity",
- "pretty_env_logger",
- "tokio",
 ]
 
 [[package]]
