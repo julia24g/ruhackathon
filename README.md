@@ -1,5 +1,9 @@
 # ruhackathon
 
-https://github.com/iotaledger/identity.rs
-https://github.com/JamesSwinton/Zebra-IOTA-VerifiableCredentials/tree/main/Demos/SmartCardDemo/ZebraIFVCSigner_Verifier
-IOTA API key: 94F5BA49-12B6-4E45-A487-BF91C442276D
+In order to run this application, you need to have Rust installed on your computer.
+
+1) Clone this repo and use your terminal to get to the 'ruhackathon' folder.
+2) Type the command 'cargo build' in your terminal to build the project.
+3) Type the command 'cargo run' to run the project.
+4) Once you input information when you are prompted, a link should appear. If it does not right away, try pressing the 'Enter' key.
+5) Copy the link into the browser to view your DID.
