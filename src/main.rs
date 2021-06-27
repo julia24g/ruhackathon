@@ -148,6 +148,8 @@ async fn main() -> Result<()> {
     Err(e) => println!("Oops! Something went wrong: {}", e)
   }
 
+  println!("[Example] Local Credential = {:#}", credential);
+
   Ok(())
 
 }
