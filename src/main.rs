@@ -115,6 +115,16 @@ async fn main() -> Result<()> {
   let subject_key: KeyPair = KeyPair::new_ed25519()?;
   let subject_did: IotaDID = IotaDID::new(subject_key.public().as_ref())?;
 
+  // Restructure strings
+  let vaccine_type_1 = vaccine_type_1.replace("\n", "");
+  let vaccine_date_1 = vaccine_date_1.replace("\n", "");
+  let vaccine_provider_1 = vaccine_provider_1.replace("\n", "");
+  let vaccine_type_2 = vaccine_type_2.replace("\n", "");
+  let vaccine_date_2 = vaccine_date_2.replace("\n", "");
+  let vaccine_provider_2 = vaccine_provider_2.replace("\n", "");
+  let antibody_test = antibody_test.replace("\n", "");
+  let active_covid_infection = active_covid_infection.replace("\n", "");
+
   // Create the actual Verifiable Credential subject.
   // I thought this part would add an atribute to the json file given in the link provided when running. It did not :(
   let subject: Subject = Subject::from_json_value(json!({
