@@ -1,4 +1,3 @@
-use std::path::PathBuf;
 use std::io;
 
 use identity::account::Account;
@@ -12,6 +11,67 @@ use identity::iota::IotaDocument;
 #[tokio::main]
 async fn main() -> Result<()> {
   pretty_env_logger::init();
+
+  // Ask for inputs
+  println!("First dose (enter 'N/A' at inputs if not recieved): ");
+
+  let mut vaccine_type_1 = String::new();
+  println!("Insert vaccine type: ");
+  match io::stdin().read_line(&mut vaccine_type_1){
+    Ok(_) => {
+      println!("You entered: {}", vaccine_type_1.to_uppercase());
+    },
+    Err(e) => println!("Oops! Something went wrong: {}", e)
+  }
+
+  let mut vaccine_date_1 = String::new();
+  println!("Insert date of vaccination (YYYY/MM/DD): ");
+  match io::stdin().read_line(&mut vaccine_date_1){
+    Ok(_) => {
+      println!("You entered: {}", vaccine_date_1.to_uppercase());
+    },
+    Err(e) => println!("Oops! Something went wrong: {}", e)
+  }
+
+  let mut vaccine_provider_1 = String::new();
+  println!("Insert vaccine provider: ");
+  match io::stdin().read_line(&mut vaccine_provider_1){
+    Ok(_) => {
+      println!("You entered: {}", vaccine_provider_1.to_uppercase());
+    },
+    Err(e) => println!("Oops! Something went wrong: {}", e)
+  }
+
+  println!("");
+
+  println!("Second dose (enter 'N/A' at inputs if not recieved): ");
+
+  let mut vaccine_type_2 = String::new();
+  println!("Insert vaccine type: ");
+  match io::stdin().read_line(&mut vaccine_type_2){
+    Ok(_) => {
+      println!("You entered: {}", vaccine_type_2.to_uppercase());
+    },
+    Err(e) => println!("Oops! Something went wrong: {}", e)
+  }
+
+  let mut vaccine_date_2 = String::new();
+  println!("Insert date of vaccination (YYYY/MM/DD): ");
+  match io::stdin().read_line(&mut vaccine_date_2){
+    Ok(_) => {
+      println!("You entered: {}", vaccine_date_2.to_uppercase());
+    },
+    Err(e) => println!("Oops! Something went wrong: {}", e)
+  }
+
+  let mut vaccine_provider_2 = String::new();
+  println!("Insert vaccine provider: ");
+  match io::stdin().read_line(&mut vaccine_provider_2){
+    Ok(_) => {
+      println!("You entered: {}", vaccine_provider_2.to_uppercase());
+    },
+    Err(e) => println!("Oops! Something went wrong: {}", e)
+  }
 
   // Create a new Account with Stronghold as the storage adapter
   let account: Account = Account::builder().build().await?;
