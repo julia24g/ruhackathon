@@ -13,15 +13,8 @@ use identity::iota::IotaDocument;
 async fn main() -> Result<()> {
   pretty_env_logger::init();
 
-  // The Stronghold settings for the storage
-  let snapshot: PathBuf = "./example-strong.hodl".into();
-  let password: String = "my-password".into();
-
   // Create a new Account with Stronghold as the storage adapter
-  let account: Account = Account::builder()
-    .storage(AccountStorage::Stronghold(snapshot, Some(password)))
-    .build()
-    .await?;
+  let account: Account = Account::builder().build().await?;
 
   // Create a new Identity with default settings
   let snapshot1: IdentitySnapshot = account.create_identity(IdentityCreate::default()).await?;
